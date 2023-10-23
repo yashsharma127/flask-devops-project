@@ -22,4 +22,8 @@ services:
       MYSQL_DATABASE: "myDb"
       MYSQL_USER: "admin"
       MYSQL_PASSWORD: "admin"
-    
+    volumes:
+      - ./message.sql:/docker-entrypoint-initdb.d/message.sql
+      - mysql-data:/var/lib/mysql
+volumes:
+  mysql-data:
