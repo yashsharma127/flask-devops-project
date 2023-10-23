@@ -8,7 +8,7 @@ spec:
     image: trainwithshubham/flaskapp:latest
     env:
       - name: MYSQL_HOST
-        value: "mysql"          
+        value: "10.100.26.61"          
       - name: MYSQL_PASSWORD
         value: "admin"
       - name: MYSQL_USER
